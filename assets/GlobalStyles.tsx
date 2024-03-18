@@ -16,6 +16,23 @@ const GlobalStylesheet = StyleSheet.create({
         letterSpacing: 1,
 
     },
+    h2: {
+       fontSize: 20,
+       fontWeight: '700', 
+       color: palette.FONT_DEFAULT,
+    }, 
+    h4: {
+        fontWeight: '700',
+        color: palette.FONT_DEFAULT,
+        textShadowColor: palette.BACKGROUND_HIGHLIGHT,
+        textShadowRadius: 8,
+    },
+    baseContainer: {
+        height: '100%',
+        width: '100%',
+        padding: 10,
+        backgroundColor: palette.BACKGROUND_PRIMARY
+    },
     textinput: {
         backgroundColor: palette.BACKGROUND_ALT,
         borderColor: palette.BACKGROUND_HIGHLIGHT,

@@ -1,14 +1,14 @@
 import { PropsWithChildren } from "react";
-import { StyleSheet, Text, TouchableOpacity } from "react-native";
+import { ButtonProps, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { PrimaryPalette } from "../../assets/Colors";
 
 const palette = PrimaryPalette;
 
-const Button = ({children}: PropsWithChildren) => {
+const CustomButton = ({title, onPress}: ButtonProps) => {
 
     return(
-        <TouchableOpacity style={[styles.container, {backgroundColor: palette.BUTTON_DEFAULT}]}>
-            <Text style={styles.text}>{children}</Text>
+        <TouchableOpacity style={[styles.container, {backgroundColor: palette.BUTTON_DEFAULT}]} onPress={onPress}>
+            <Text style={styles.text}>{title}</Text>
         </TouchableOpacity>
     )
 }
@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Button;
+export default CustomButton;

@@ -1,0 +1,61 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "jenny32",
+            "fullname": "Jenny Rodriguez",
+            "number": "321 522 958",
+            "password": "dog",
+            "image": "https://st.depositphotos.com/1912933/1749/i/950/depositphotos_17491981-stock-photo-old-woman.jpg"
+        },
+        {
+            "id": 2,
+            "username": "bitchlasagna5",
+            "fullname": "Rajeesh Malik",
+            "number": "999 512 312",
+            "password": "cat",
+            "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "postBy": 1,
+            "type": "walk",
+            "dogs": [1]
+        },
+        {
+            "id": 1,
+            "postBy": 1,
+            "type": "walk",
+            "dogs": [1]
+        },
+        {
+            "id": 1,
+            "postBy": 1,
+            "type": "walk",
+            "dogs": [1]
+        },
+        {
+            "id": 1,
+            "postBy": 1,
+            "type": "walk",
+            "dogs": [1]
+        },
+        {
+            "id": 1,
+            "postBy": 1,
+            "type": "walk",
+            "dogs": [1]
+        }
+    ],
+    "dogs": [
+        {
+            "id": 1,
+            "name": "Cupcake",
+            "breed": "Pitbull",
+            "details": "Dislikes loud noises and mailmen.",
+            "image": "https://zooart.com.pl/blog/wp-content/uploads/2020/06/pitbull-rasa-1.jpeg"
+        }
+    ]
+}
