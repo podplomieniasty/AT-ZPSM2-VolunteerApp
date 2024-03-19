@@ -3,13 +3,15 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "./views/LoginScreen";
 import RegisterScreen from "./views/RegisterScreen";
 import HomeScreen from "./views/HomeScreen";
+import { PetWalkPost } from "./Posts/Posts";
+import ProfileScreen from "./views/ProfileScreen";
 
 const Stack = createNativeStackNavigator();
 
 const AppStack = () => {
     return(
         <NavigationContainer>
-            <Stack.Navigator screenOptions={{headerShown: false}}>
+            <Stack.Navigator screenOptions={{headerShown: false}} id='AppStack'>
                 <Stack.Screen 
                     name='Login'
                     component={LoginScreen} />
@@ -19,6 +21,14 @@ const AppStack = () => {
                 <Stack.Screen
                     name='Home'
                     component={HomeScreen} />
+                <Stack.Screen
+                    name='PetWalkPost'
+                    component={PetWalkPost} />
+                <Stack.Screen
+                    name='ProfileScreen'
+                    component={ProfileScreen}
+                    initialParams={{userId: 1}}
+                    />
             </Stack.Navigator>
         </NavigationContainer>
     )

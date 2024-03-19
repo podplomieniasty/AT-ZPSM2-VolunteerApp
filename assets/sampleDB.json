@@ -15,38 +15,49 @@
             "number": "999 512 312",
             "password": "cat",
             "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+            "id": 3,
+            "username": "superstar10",
+            "fullname": "Gregory Fnaf",
+            "number": "932 223 123",
+            "password": "fnaf",
+            "image": "https://static.wikia.nocookie.net/fnaf-the-novel/images/e/e6/Gregory.webp/revision/latest?cb=20230508173902"
         }
     ],
     "posts": [
         {
             "id": 1,
             "postBy": 1,
-            "type": "walk",
-            "dogs": [1]
+            "type": "Pet walk",
+            "dogs": [1],
+            "createdOn": "2024-01-01",
+            "deadlineDate": "2024-01-03",
+            "deadlineHour": "16:00",
+            "duration": "1 hour",
+            "details": "Please arrive at the back of my house. Thank you dear."
         },
         {
-            "id": 1,
-            "postBy": 1,
-            "type": "walk",
-            "dogs": [1]
+            "id": 2,
+            "postBy": 2,
+            "type": "Pet walk",
+            "dogs": [2],
+            "createdOn": "2024-02-01",
+            "deadlineDate": "2024-02-04",
+            "deadlineHour": "13:00",
+            "duration": "30 min",
+            "details": "Hello show bob vagene"
         },
         {
-            "id": 1,
-            "postBy": 1,
-            "type": "walk",
-            "dogs": [1]
-        },
-        {
-            "id": 1,
-            "postBy": 1,
-            "type": "walk",
-            "dogs": [1]
-        },
-        {
-            "id": 1,
-            "postBy": 1,
-            "type": "walk",
-            "dogs": [1]
+            "id": 3,
+            "postBy": 3,
+            "type": "Pet walk",
+            "dogs": [3],
+            "createdOn": "2024-02-01",
+            "deadlineDate": "2024-02-04",
+            "deadlineHour": "24:00",
+            "duration": "6 hours",
+            "details": "PLEASE HOW DO I LEAVE"
         }
     ],
     "dogs": [
@@ -56,6 +67,20 @@
             "breed": "Pitbull",
             "details": "Dislikes loud noises and mailmen.",
             "image": "https://zooart.com.pl/blog/wp-content/uploads/2020/06/pitbull-rasa-1.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Oceiros, The Unleashed",
+            "breed": "Corgi",
+            "details": "Will ride to defend Gondor if not supervised.",
+            "image": "https://media.os.fressnapf.com/cms/2020/07/ratgeber_hund_rasse_portraits_welsh-corgi-pembroke_1200x527.jpg?t=seoimgsqr_527"
+        },
+        {
+            "id": 3,
+            "name": "Freddy Fazbear",
+            "breed": "Bear",
+            "details": "GREGORY I HAVE BEEN EMPLACED IN A STUFFED BEAR PLUSHIE",
+            "image": "https://i.ebayimg.com/images/g/5Z4AAOSwbltiAfxD/s-l1600.jpg"
         }
     ]
 }

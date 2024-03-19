@@ -1,7 +1,8 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import TestScreen from "./TestScreen";
 import PostsScreen from "./PostsScreen";
 import { PrimaryPalette } from "../../assets/Colors";
+import SettingsScreen from "./SettingsScreen";
+import { Image } from "react-native";
 
 const Tab = createBottomTabNavigator();
 const palette = PrimaryPalette;
@@ -18,8 +19,28 @@ const HomeScreen = () => {
                 backgroundColor: palette.BACKGROUND_HIGHLIGHT
             }
         }}>
-            <Tab.Screen name="Posts" component={PostsScreen} />
-            <Tab.Screen name="Test" component={TestScreen} />
+            <Tab.Screen name="Posts" 
+                component={PostsScreen} 
+                options={{
+                    tabBarIcon: ({focused, size, color}) => {
+                        return <Image 
+                            style={{width: size, height: size}} 
+                            source={require('../../assets/images/phone.png')}
+                            tintColor={focused ? palette.BUTTON_DEFAULT : color}
+                            />
+                    }
+                }}/>
+            <Tab.Screen name="Settings" 
+                component={SettingsScreen} 
+                options={{
+                    tabBarIcon: ({focused, size, color}) => {
+                        return <Image 
+                            style={{width: size, height: size}} 
+                            source={require('../../assets/images/settings.png')}
+                            tintColor={focused ? palette.BUTTON_DEFAULT : color}
+                            />
+                    }
+                }}/>
         </Tab.Navigator>
     )
 }

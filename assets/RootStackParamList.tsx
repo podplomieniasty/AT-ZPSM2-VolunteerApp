@@ -3,6 +3,9 @@ export type RootStackParamList = {
     Register: {id: number} | undefined;
     Home: {id: number} | undefined;
     Posts: {id: number} | undefined;
+    PetWalkPost: {id: number} | undefined;
+    SettingsScreen: {id: number} | undefined;
+    ProfileScreen: {id: number, userId: number};
 }
 
 /**
