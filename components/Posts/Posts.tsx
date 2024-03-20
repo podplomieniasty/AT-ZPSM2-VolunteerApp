@@ -5,11 +5,12 @@ import { GlobalStylesheet } from '../../assets/GlobalStyles';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../assets/RootStackParamList';
+import { Post } from '../../assets/Types';
 
 
 const palette = PrimaryPalette;
 
-const PetWalkPostPreview = (props: PostProps) => {
+const PetWalkPostPreview = (props: Post) => {
     const relatedUser = sampleDB.users.find(x => props.postBy === x.id);
     const relatedPets = sampleDB.dogs.filter(x => props.dogs.includes(x.id));
 
@@ -61,24 +62,10 @@ const PetWalkPost = () => {
     )
 }
 
-type PostProps = {
-    id: number;
-    postBy: number;
-    type: string;
-    dogs: number[];
-    createdOn: string;
-    deadlineDate: string;
-    deadlineHour: string;
-    duration: string;
-    details: string;
-}
-
 const styles = StyleSheet.create({
     postContainer: {
         margin: 20,
         padding: 10,
-
-
 
         backgroundColor: palette.BACKGROUND_ALT,
         borderRadius: 20,
@@ -138,4 +125,3 @@ const styles = StyleSheet.create({
 })
 
 export {PetWalkPostPreview, PetWalkPost};
-export type {PostProps};

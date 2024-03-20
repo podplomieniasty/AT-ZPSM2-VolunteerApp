@@ -1,13 +1,11 @@
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { GlobalStylesheet } from "../../assets/GlobalStyles";
 import sampleDB from '../../assets/sampleDB.json';
-import { PrimaryPalette } from "../../assets/Colors";
-import { PetWalkPostPreview, PostProps } from "../Posts/Posts";
+import { PetWalkPostPreview} from "../Posts/Posts";
+import { Post } from "../../assets/Types";
 
-const palette = PrimaryPalette;
 
-const mapPost = (elem: PostProps, key: any) => {
+const mapPost = (elem: Post, key: any) => {
     switch(elem.type) {
         case "Pet walk": return <PetWalkPostPreview {...elem} key={key}/>; break;
     }

@@ -33,6 +33,14 @@ const GlobalStylesheet = StyleSheet.create({
         padding: 10,
         backgroundColor: palette.BACKGROUND_PRIMARY
     },
+    centeredFlex: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: 15,
+        marginRight: 15,
+    },
     textinput: {
         backgroundColor: palette.BACKGROUND_ALT,
         borderColor: palette.BACKGROUND_HIGHLIGHT,
