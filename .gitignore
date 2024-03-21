@@ -64,3 +64,6 @@ yarn-error.log
 
 # testing
 /coverage
+
+# u mnie działa przepraszam ale jak zmienie to u waz może nie działać
+index.js
